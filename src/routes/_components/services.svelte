@@ -36,7 +36,9 @@
 	];
 </script>
 
-<div class="grid gap-4 md:grid-cols-[1fr_4fr] grid-flow-row md:p-20 bg-red-200/10 p-4">
+<div
+	class="grid gap-4 md:grid-cols-[1fr_4fr] grid-flow-row md:grid-flow-col md:p-20 bg-red-200/10 p-4"
+>
 	<div class="uppercase font-mono text-sm min-w-0">Our Services</div>
 	<div class="w-full flex flex-col gap-6 justify-start min-w-0">
 		<div class="flex flex-row w-full justify-between">

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Rohit from '$lib/assets/images/rohit_singh.png';
-	import Binong from '$lib/assets/images/binong.jpeg';
-	import Pattern from '$lib/assets/images/pexels-this-and-no-internet-25-288559-35336018.jpg';
+	import Rohit from '$lib/assets/images/rohit_singh.png?enhanced';
+	import Binong from '$lib/assets/images/binong.jpeg?enhanced';
+	import Pattern from '$lib/assets/images/pexels-this-and-no-internet-25-288559-35336018.jpg?enhanced';
 
 	const attorneys = [
 		{
@@ -19,12 +19,9 @@
 	];
 </script>
 
-<div class="grid gap-4 md:grid-cols-[1fr_4fr] grid-flow-row md:p-20 bg-green-400/10 relative p-4">
-	<enhanced:img
-		src={Pattern}
-		alt="About Us"
-		class="absolute inset-0 w-full h-full object-cover z-0 opacity-10"
-	/>
+<div
+	class="grid gap-4 md:grid-cols-[1fr_4fr] grid-flow-row md:grid-flow-col md:p-20 bg-green-400/10 relative p-4"
+>
 	<div class="uppercase font-mono text-sm min-w-0">Our Attorneys</div>
 
 	<div class="w-full flex flex-col gap-6 justify-start min-w-0" id="attorneys">
@@ -58,5 +55,9 @@
 		</div>
 	</div>
 
-	<!-- <div class="w-64"></div> -->
+	<enhanced:img
+		src={Pattern}
+		alt="About Us"
+		class="absolute inset-0 w-full h-full object-cover -z-1 opacity-10"
+	/>
 </div>

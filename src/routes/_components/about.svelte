@@ -1,7 +1,7 @@
 <script lang="ts"></script>
 
 <div
-	class="grid gap-4 md:grid-cols-[1fr_4fr] grid-flow-row md:p-20 p-4 bg-amber-800/10 min-h-72"
+	class="grid gap-4 md:grid-cols-[1fr_4fr] grid-flow-row md:grid-flow-col md:p-20 p-4 bg-amber-800/10 min-h-72"
 	id="about"
 >
 	<div class="uppercase font-mono text-sm min-w-0">About us</div>
