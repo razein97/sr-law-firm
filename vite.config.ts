@@ -28,7 +28,7 @@ export default defineConfig({
 
 		Icons({ compiler: 'svelte' }),
 
-		svelteSitemap({ domain: 'https://peakgazers.com' })
+		svelteSitemap({ domain: 'https://srlegalpartners.com' })
 	],
 
 });
