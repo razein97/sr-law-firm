@@ -7,8 +7,6 @@ import { defineConfig } from 'vite';
 import Icons from 'unplugin-icons/vite';
 import { svelteSitemap } from 'svelte-sitemap/vite';
 
-const dev = process.env.NODE_ENV === 'development';
-
 export default defineConfig({
 	plugins: [
 		enhancedImages(),
@@ -23,18 +21,7 @@ export default defineConfig({
 			// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
 			// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 			// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-			adapter: adapter({
-				// default options are shown. On some platforms
-				// these options are set automatically — see below
-				pages: 'build',
-				assets: 'build',
-				fallback: undefined,
-				precompress: false,
-				strict: true,
-			}),
-			paths: {
-				base: dev ? '' : '/sr-law-firm',
-			},
+			adapter: adapter(),
 			preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
 			extensions: ['.svelte', '.svx', '.md']
 		}),
