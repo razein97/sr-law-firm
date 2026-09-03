@@ -1,0 +1,6 @@
+allowBuilds:
+  '@tailwindcss/oxide': true
+  esbuild: true
+  sharp: false
+minimumReleaseAgeExclude:
+  - '@iconify/json@2.2.487'
