@@ -7,6 +7,8 @@ import { defineConfig } from 'vite';
 import Icons from 'unplugin-icons/vite';
 import { svelteSitemap } from 'svelte-sitemap/vite';
 
+const dev = process.env.NODE_ENV === 'development';
+
 export default defineConfig({
 	plugins: [
 		enhancedImages(),
@@ -30,5 +32,9 @@ export default defineConfig({
 
 		svelteSitemap({ domain: 'https://srlegalpartners.com' })
 	],
+
+	server: {
+		allowedHosts: [dev ? "bzcln-152-58-144-54.run.pinggy-free.link" : ""]
+	}
 
 });

@@ -11,11 +11,11 @@
 </script>
 
 <nav
-	class="absolute left-0 top-0 z-30 flex h-fit w-full items-center justify-center overflow-auto rounded-sm px-4"
+	class="absolute left-0 top-0 z-30 bg-background flex h-16 w-full items-center justify-center overflow-auto rounded-b-sm px-4"
 >
 	<div class="flex h-full w-full min-w-full max-w-400 flex-row items-center justify-between">
 		<a href={resolve('/')} class="flex flex-row items-center space-x-2">
-			<img src={logoIcon} alt="Singh & Rongphar" class="size-18" />
+			<img src={logoIcon} alt="Singh & Rongphar" class="size-16" />
 
 			<div class="flex-col md:flex hidden">
 				<p class="font-seasons-bold text-xl md:text-2xl">Singh & Rongphar</p>

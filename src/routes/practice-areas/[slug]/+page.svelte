@@ -15,12 +15,6 @@
 
 <!-- Hero -->
 <section class="relative overflow-hidden bg-stone-950 text-white">
-	<!-- subtle background -->
-	<div
-		class="pointer-events-none absolute inset-0
-           bg-[radial-gradient(circle_at_80%_20%,rgba(180,83,9,0.12),transparent_35%)]"
-	></div>
-
 	<div class="relative mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8 lg:py-32">
 		<a
 			href={resolve('/practice-areas')}

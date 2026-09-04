@@ -31,10 +31,9 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<main class="bg-background min-h-dvh w-full scroll-smooth! max-h-screen h-full flex">
-	<Drawer />
+<main class="bg-background min-h-dvh w-full scroll-smooth! max-h-screen flex">
 	<Navbar />
-
+	<Drawer />
 	<div class="flex-1">
 		{@render children?.()}
 	</div>

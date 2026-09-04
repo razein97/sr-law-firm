@@ -37,7 +37,7 @@
 				<a
 					href={`/practice-areas/${area.slug}`}
 					class="group relative flex min-h-80 flex-col
-                 bg-white p-7 transition-colors duration-300
+                 bg-card p-7 transition-colors duration-300
                  hover:bg-stone-950/90 sm:p-8"
 				>
 					<!-- Number + Arrow -->
